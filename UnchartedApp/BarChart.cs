@@ -24,7 +24,7 @@ namespace UnchartedApp
 
         private void InitFrameSize()
         {
-            int h = (int)(Screen.PrimaryScreen.WorkingArea.Height * 0.65);
+            int h = (int)(Screen.PrimaryScreen.WorkingArea.Height * 0.75);
             int w = (int)(Screen.PrimaryScreen.WorkingArea.Width * 0.65);
             Size = new Size(w, h);
         }
@@ -62,6 +62,11 @@ namespace UnchartedApp
             }
 
             MainChart.Series.Add(newSeries);
+        }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
