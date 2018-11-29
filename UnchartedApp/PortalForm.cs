@@ -15,35 +15,7 @@ namespace UnchartedApp
         public PortalForm()
         {
             InitializeComponent();
-            InitFrameSize();
-        }
-
-        private void InitFrameSize()
-        {
-            int h = (int)(Screen.PrimaryScreen.WorkingArea.Height * 0.75);
-            int w = (int)(Screen.PrimaryScreen.WorkingArea.Width * 0.65);
-            Size = new Size(w, h);
-        }
-
-        private void AnyForm_FormClosed(object sender, EventArgs e)
-        {
-            Show();
-        }
-
-        private void BarButton_Click(object sender, EventArgs e)
-        {
-            BarChart selectedChart = new BarChart();
-            selectedChart.FormClosed += new FormClosedEventHandler(AnyForm_FormClosed);
-            selectedChart.Show();
-            Hide();
-        }
-
-        private void PieButton_Click(object sender, EventArgs e)
-        {
-            PieChart selectedChart = new PieChart();
-            selectedChart.FormClosed += new FormClosedEventHandler(AnyForm_FormClosed);
-            selectedChart.Show();
-            Hide();
+            Size = Program.InitFrameSize();
         }
 
         private void ExitButton_Click(object sender, EventArgs e)
@@ -51,9 +23,45 @@ namespace UnchartedApp
             Close();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void AnyChart_FormClosed(object sender, EventArgs e)
         {
+            Show();
+        }
 
+        private void BarButton_Click(object sender, EventArgs e)
+        {
+            BarChart selectedChart = new BarChart();
+            selectedChart.FormClosed += new FormClosedEventHandler(AnyChart_FormClosed);
+
+            Hide();
+            selectedChart.Show();
+        }
+
+        private void PieButton_Click(object sender, EventArgs e)
+        {
+            PieChart selectedChart = new PieChart();
+            selectedChart.FormClosed += new FormClosedEventHandler(AnyChart_FormClosed);
+
+            Hide();
+            selectedChart.Show();
+        }
+
+        private void PyramidButton_Click(object sender, EventArgs e)
+        {
+            PyramidChart selectedChart = new PyramidChart();
+            selectedChart.FormClosed += new FormClosedEventHandler(AnyChart_FormClosed);
+
+            Hide();
+            selectedChart.Show();
+        }
+
+        private void LineButton_Click(object sender, EventArgs e)
+        {
+            LineChart selectedChart = new LineChart();
+            selectedChart.FormClosed += new FormClosedEventHandler(AnyChart_FormClosed);
+
+            Hide();
+            selectedChart.Show();
         }
     }
 }

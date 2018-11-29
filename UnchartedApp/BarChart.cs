@@ -17,16 +17,9 @@ namespace UnchartedApp
         public BarChart()
         {
             InitializeComponent();
-            InitFrameSize();
+            Size = Program.InitFrameSize();
             CenterToScreen();
             InitDataPoints();
-        }
-
-        private void InitFrameSize()
-        {
-            int h = (int)(Screen.PrimaryScreen.WorkingArea.Height * 0.75);
-            int w = (int)(Screen.PrimaryScreen.WorkingArea.Width * 0.65);
-            Size = new Size(w, h);
         }
 
         private void InitDataPoints()

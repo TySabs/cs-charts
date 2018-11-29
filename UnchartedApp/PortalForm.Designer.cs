@@ -82,6 +82,7 @@
             this.PyramidButton.TabIndex = 3;
             this.PyramidButton.Text = "Pyramid";
             this.PyramidButton.UseVisualStyleBackColor = true;
+            this.PyramidButton.Click += new System.EventHandler(this.PyramidButton_Click);
             // 
             // LineButton
             // 
@@ -92,6 +93,7 @@
             this.LineButton.TabIndex = 4;
             this.LineButton.Text = "Line";
             this.LineButton.UseVisualStyleBackColor = true;
+            this.LineButton.Click += new System.EventHandler(this.LineButton_Click);
             // 
             // label1
             // 
@@ -128,7 +130,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1239, 1210);
             this.panel1.TabIndex = 7;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // PortalForm
             // 

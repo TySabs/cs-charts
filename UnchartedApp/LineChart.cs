@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace UnchartedApp
 {
-    public partial class PieChart : Form
+    public partial class LineChart : Form
     {
-        public PieChart()
+        public LineChart()
         {
             InitializeComponent();
             Size = Program.InitFrameSize();
