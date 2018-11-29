@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace UnchartedApp
 {
-    public partial class Form1 : Form
+    public partial class PieChart : Form
     {
-        public Form1()
+        public PieChart()
         {
             InitializeComponent();
         }
