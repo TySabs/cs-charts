@@ -33,7 +33,7 @@ namespace UnchartedApp
 
         private void AnyForm_FormClosed(object sender, EventArgs e)
         {
-            Close();
+            Show();
         }
 
         private void BarButton_Click(object sender, EventArgs e)
