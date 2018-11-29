@@ -23,12 +23,6 @@ namespace UnchartedApp
             int h = (int)(Screen.PrimaryScreen.WorkingArea.Height * 0.75);
             int w = (int)(Screen.PrimaryScreen.WorkingArea.Width * 0.65);
             Size = new Size(w, h);
-
-            BarButton.Left = (this.ClientSize.Width - BarButton.Width) / 2;
-            BarButton.Top =(int) ((this.ClientSize.Height - BarButton.Height) * 0.3);
-
-            PieButton.Left = (this.ClientSize.Width - PieButton.Width) / 2;
-            PieButton.Top =(int) ((this.ClientSize.Height - PieButton.Height) * 0.5);
         }
 
         private void AnyForm_FormClosed(object sender, EventArgs e)
@@ -50,6 +44,16 @@ namespace UnchartedApp
             selectedChart.FormClosed += new FormClosedEventHandler(AnyForm_FormClosed);
             selectedChart.Show();
             Hide();
+        }
+
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
