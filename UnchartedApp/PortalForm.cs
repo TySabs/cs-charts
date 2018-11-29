@@ -16,7 +16,6 @@ namespace UnchartedApp
         {
             InitializeComponent();
             InitFrameSize();
-            CenterToScreen();
         }
 
         private void InitFrameSize()
@@ -32,9 +31,15 @@ namespace UnchartedApp
             PieButton.Top =(int) ((this.ClientSize.Height - PieButton.Height) * 0.5);
         }
 
+        private void AnyForm_FormClosed(object sender, EventArgs e)
+        {
+            Close();
+        }
+
         private void BarButton_Click(object sender, EventArgs e)
         {
             BarChart selectedChart = new BarChart();
+            selectedChart.FormClosed += new FormClosedEventHandler(AnyForm_FormClosed);
             selectedChart.Show();
             Hide();
         }
@@ -42,6 +47,7 @@ namespace UnchartedApp
         private void PieButton_Click(object sender, EventArgs e)
         {
             PieChart selectedChart = new PieChart();
+            selectedChart.FormClosed += new FormClosedEventHandler(AnyForm_FormClosed);
             selectedChart.Show();
             Hide();
         }

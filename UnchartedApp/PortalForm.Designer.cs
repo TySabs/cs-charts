@@ -76,6 +76,7 @@
             this.Controls.Add(this.BarButton);
             this.Controls.Add(this.MainPortalLabel);
             this.Name = "PortalForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Uncharted Portal";
             this.ResumeLayout(false);
 
