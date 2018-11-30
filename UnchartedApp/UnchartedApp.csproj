@@ -82,6 +82,9 @@
     <EmbeddedResource Include="BarChart.resx">
       <DependentUpon>BarChart.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PieChart.resx">
+      <DependentUpon>PieChart.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PortalForm.resx">
       <DependentUpon>PortalForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -106,6 +109,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\Resources\industries.txt" />
+    <Content Include="Properties\Resources\job-priorities.txt" />
+    <Content Include="Properties\Resources\popular-languages.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

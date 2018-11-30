@@ -1,0 +1,11 @@
+49.6#Node.js
+36.9#Angular
+27.8#React
+27.2#.Net Core
+17.6#Spring
+13.0#Django
+8.5#Cordova
+7.8#TensorFlow
+7.4#Xamarin
+4.8#Spark
+4.7#Hadoop
