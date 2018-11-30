@@ -3,11 +3,23 @@ using System.IO;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 
+/************************************************************
+ *                                                          *
+ *  CSCI 473/504           Assignment 6         Fall 2018   *
+ *                                                          *
+ *  Programmers: Tyler Saballus                             *
+ *                                                          *
+ *  Date Due:   Nov-29                                      *
+ *                                                          *
+ *  Purpose:    This is a Charting app that displays        *
+ *               various different types of developer data. *
+ ***********************************************************/
 
 namespace UnchartedApp
 {
     public partial class BarChart : Form
     {
+        // Chart constructor
         public BarChart()
         {
             InitializeComponent();
@@ -16,6 +28,15 @@ namespace UnchartedApp
             InitDataPoints();
         }
 
+
+        /*******************************************************
+        * InitDataPoints method
+        *
+        * Arguments: (0):
+        *
+        * Return Type: void
+        * Use Case: Initializes Data points for this char
+        ******************************************************/
         private void InitDataPoints()
         {
             Series newSeries = new Series();
@@ -45,15 +66,23 @@ namespace UnchartedApp
                     newPoint.LabelFormat = "#.0\'%\'";
 
                     newSeries.Points.Add(newPoint);
-                }
-            }
+                } // end while loop
+            } // end using
 
             MainChart.Series.Add(newSeries);
-        }
+        }  // end InitDataPoints method
 
+        /*******************************************************
+        * BackButton_Click method
+        *
+        * Arguments: (0):
+        *
+        * Return Type: void
+        * Use Case: Closes the chart on button click
+        ******************************************************/
         private void BackButton_Click(object sender, EventArgs e)
         {
             Close();
         }
-    }
-}
+    } // end BarChart class
+} // end UnchartedApp namespace

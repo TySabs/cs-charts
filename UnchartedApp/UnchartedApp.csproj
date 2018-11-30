@@ -119,7 +119,13 @@
   <ItemGroup>
     <Content Include="Properties\Resources\industries.txt" />
     <Content Include="Properties\Resources\job-priorities.txt" />
+    <Content Include="Properties\Resources\languages-dreaded.txt" />
+    <Content Include="Properties\Resources\languages-loved.txt" />
+    <Content Include="Properties\Resources\languages-wanted.txt" />
+    <Content Include="Properties\Resources\popular-databases.txt" />
+    <Content Include="Properties\Resources\popular-frameworks.txt" />
     <Content Include="Properties\Resources\popular-languages.txt" />
+    <Content Include="Properties\Resources\popular-platforms.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

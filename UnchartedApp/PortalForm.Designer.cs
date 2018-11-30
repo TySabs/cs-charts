@@ -140,7 +140,7 @@
             this.Name = "PortalForm";
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Uncharted Portal";
+            this.Text = "Uncharted Portal - Tyler Saballus";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

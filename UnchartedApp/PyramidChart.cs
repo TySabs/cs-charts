@@ -1,19 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
+
+/************************************************************
+ *                                                          *
+ *  CSCI 473/504           Assignment 6         Fall 2018   *
+ *                                                          *
+ *  Programmers: Tyler Saballus                             *
+ *                                                          *
+ *  Date Due:   Nov-29                                      *
+ *                                                          *
+ *  Purpose:    This is a Charting app that displays        *
+ *               various different types of developer data. *
+ ***********************************************************/
 
 namespace UnchartedApp
 {
     public partial class PyramidChart : Form
     {
+        // Chart constructor
         public PyramidChart()
         {
             InitializeComponent();
@@ -22,6 +28,14 @@ namespace UnchartedApp
             InitDataPoints();
         }
 
+        /*******************************************************
+        * InitDataPoints method
+        *
+        * Arguments: (0):
+        *
+        * Return Type: void
+        * Use Case: Initializes Data points for this char
+        ******************************************************/
         private void InitDataPoints()
         {
             Series newSeries = new Series();
@@ -53,11 +67,20 @@ namespace UnchartedApp
             }
 
             MainChart.Series.Add(newSeries);
-        }
+        } // end InitDataPoints method
 
+
+        /*******************************************************
+        * BackButton_Click method
+        *
+        * Arguments: (0):
+        *
+        * Return Type: void
+        * Use Case: Closes the chart on button click
+        ******************************************************/
         private void BackButton_Click(object sender, EventArgs e)
         {
             Close();
         }
-    }
-}
+    } // end PyramidChart class
+} // end UnchartedApp namespace
