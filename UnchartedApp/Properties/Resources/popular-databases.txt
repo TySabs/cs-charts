@@ -1,0 +1,10 @@
+58.7#MySQL
+41.2#SQL Server
+32.9#PostgreSQL
+25.9#MongoDB
+19.7#SQLite
+18.0#Redis
+14.1#ElasticSearch
+13.4#MariaDB
+11.1#Oracle
+7.9#Microsoft Azure (Tables, CosmosDB, SQL, etc)

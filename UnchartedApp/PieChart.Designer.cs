@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.SourceLabel = new System.Windows.Forms.Label();
+            this.BackButton = new System.Windows.Forms.Button();
             this.MainLabel = new System.Windows.Forms.Label();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.BackButton = new System.Windows.Forms.Button();
-            this.SourceLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
@@ -51,29 +51,15 @@
             this.panel1.Size = new System.Drawing.Size(1638, 1327);
             this.panel1.TabIndex = 0;
             // 
-            // MainLabel
+            // SourceLabel
             // 
-            this.MainLabel.AutoSize = true;
-            this.MainLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.MainLabel.Location = new System.Drawing.Point(12, 26);
-            this.MainLabel.Name = "MainLabel";
-            this.MainLabel.Size = new System.Drawing.Size(1546, 82);
-            this.MainLabel.TabIndex = 1;
-            this.MainLabel.Text = "Most Popular Frameworks, Libraries, and Tools";
-            // 
-            // chart1
-            // 
-            chartArea10.AxisY.Title = "Popularity";
-            chartArea10.Name = "MainArea";
-            this.chart1.ChartAreas.Add(chartArea10);
-            legend10.Name = "MainLegend";
-            legend10.Title = "Framework";
-            this.chart1.Legends.Add(legend10);
-            this.chart1.Location = new System.Drawing.Point(44, 141);
-            this.chart1.Name = "chart1";
-            this.chart1.Size = new System.Drawing.Size(1551, 949);
-            this.chart1.TabIndex = 0;
-            this.chart1.Text = "chart1";
+            this.SourceLabel.AutoSize = true;
+            this.SourceLabel.Location = new System.Drawing.Point(39, 1102);
+            this.SourceLabel.Name = "SourceLabel";
+            this.SourceLabel.Size = new System.Drawing.Size(1133, 29);
+            this.SourceLabel.TabIndex = 5;
+            this.SourceLabel.Text = "Source: StackOverflow Developer Survey 2018 -- All Respondents, 51,620 responses;" +
+    " select all that apply";
             // 
             // BackButton
             // 
@@ -86,15 +72,30 @@
             this.BackButton.UseVisualStyleBackColor = true;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
-            // SourceLabel
+            // MainLabel
             // 
-            this.SourceLabel.AutoSize = true;
-            this.SourceLabel.Location = new System.Drawing.Point(39, 1102);
-            this.SourceLabel.Name = "SourceLabel";
-            this.SourceLabel.Size = new System.Drawing.Size(1151, 29);
-            this.SourceLabel.TabIndex = 5;
-            this.SourceLabel.Text = "Source: StackOverflow Developer Survey 2018 -- All Respondents, 51,620 responses;" +
-    " Select All That Apply";
+            this.MainLabel.AutoSize = true;
+            this.MainLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.MainLabel.Location = new System.Drawing.Point(12, 26);
+            this.MainLabel.Name = "MainLabel";
+            this.MainLabel.Size = new System.Drawing.Size(1546, 82);
+            this.MainLabel.TabIndex = 1;
+            this.MainLabel.Text = "Most Popular Frameworks, Libraries, and Tools";
+            // 
+            // chart1
+            // 
+            chartArea1.AxisY.Title = "Popularity";
+            chartArea1.Name = "MainArea";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "MainLegend";
+            legend1.Title = "Framework";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(44, 141);
+            this.chart1.Name = "chart1";
+            this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
+            this.chart1.Size = new System.Drawing.Size(1551, 949);
+            this.chart1.TabIndex = 0;
+            this.chart1.Text = "chart1";
             // 
             // PieChart
             // 

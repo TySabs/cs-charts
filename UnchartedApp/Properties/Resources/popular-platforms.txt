@@ -1,0 +1,13 @@
+48.3#Linux
+35.4#Windows Desktop or Server
+29.0#Android
+24.1#AWS
+17.9#Mac OS
+15.9#Raspberry Pi
+15.9#WordPress
+15.5#iOs
+14.5#Firebase
+11.0#Azure
+10.6#Arduino
+10.5#Heroku
+8.0#Google Cloud Platform/App Engine
