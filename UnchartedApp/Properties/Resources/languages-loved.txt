@@ -1,0 +1,10 @@
+78.9*Rust
+75.1*Kotlin
+68.0*Python
+67.0*TypeScript
+65.6*Go
+65.1*Swift
+61.9*JavaScript
+60.4*C#
+59.6*F#
+59.6*Clojure

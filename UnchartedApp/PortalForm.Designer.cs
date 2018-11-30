@@ -32,7 +32,7 @@
             this.BarButton = new System.Windows.Forms.Button();
             this.PieButton = new System.Windows.Forms.Button();
             this.PyramidButton = new System.Windows.Forms.Button();
-            this.LineButton = new System.Windows.Forms.Button();
+            this.DoughnutButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.ExitButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -84,16 +84,16 @@
             this.PyramidButton.UseVisualStyleBackColor = true;
             this.PyramidButton.Click += new System.EventHandler(this.PyramidButton_Click);
             // 
-            // LineButton
+            // DoughnutButton
             // 
-            this.LineButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.LineButton.Location = new System.Drawing.Point(667, 544);
-            this.LineButton.Name = "LineButton";
-            this.LineButton.Size = new System.Drawing.Size(373, 126);
-            this.LineButton.TabIndex = 4;
-            this.LineButton.Text = "Line";
-            this.LineButton.UseVisualStyleBackColor = true;
-            this.LineButton.Click += new System.EventHandler(this.LineButton_Click);
+            this.DoughnutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.DoughnutButton.Location = new System.Drawing.Point(667, 544);
+            this.DoughnutButton.Name = "DoughnutButton";
+            this.DoughnutButton.Size = new System.Drawing.Size(373, 126);
+            this.DoughnutButton.TabIndex = 4;
+            this.DoughnutButton.Text = "Doughnut";
+            this.DoughnutButton.UseVisualStyleBackColor = true;
+            this.DoughnutButton.Click += new System.EventHandler(this.DoughnutButton_Click);
             // 
             // label1
             // 
@@ -124,7 +124,7 @@
             this.panel1.Controls.Add(this.BarButton);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.PieButton);
-            this.panel1.Controls.Add(this.LineButton);
+            this.panel1.Controls.Add(this.DoughnutButton);
             this.panel1.Controls.Add(this.PyramidButton);
             this.panel1.Location = new System.Drawing.Point(735, 12);
             this.panel1.Name = "panel1";
@@ -153,7 +153,7 @@
         private System.Windows.Forms.Button BarButton;
         private System.Windows.Forms.Button PieButton;
         private System.Windows.Forms.Button PyramidButton;
-        private System.Windows.Forms.Button LineButton;
+        private System.Windows.Forms.Button DoughnutButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button ExitButton;
         private System.Windows.Forms.Panel panel1;

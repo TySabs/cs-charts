@@ -53,11 +53,11 @@
     <Compile Include="BarChart.Designer.cs">
       <DependentUpon>BarChart.cs</DependentUpon>
     </Compile>
-    <Compile Include="LineChart.cs">
+    <Compile Include="DoughnutChart.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LineChart.Designer.cs">
-      <DependentUpon>LineChart.cs</DependentUpon>
+    <Compile Include="DoughnutChart.Designer.cs">
+      <DependentUpon>DoughnutChart.cs</DependentUpon>
     </Compile>
     <Compile Include="PieChart.cs">
       <SubType>Form</SubType>
@@ -81,6 +81,9 @@
     </Compile>
     <EmbeddedResource Include="BarChart.resx">
       <DependentUpon>BarChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoughnutChart.resx">
+      <DependentUpon>DoughnutChart.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PieChart.resx">
       <DependentUpon>PieChart.cs</DependentUpon>

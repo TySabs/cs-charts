@@ -55,9 +55,9 @@ namespace UnchartedApp
             selectedChart.Show();
         }
 
-        private void LineButton_Click(object sender, EventArgs e)
+        private void DoughnutButton_Click(object sender, EventArgs e)
         {
-            LineChart selectedChart = new LineChart();
+            DoughnutChart selectedChart = new DoughnutChart();
             selectedChart.FormClosed += new FormClosedEventHandler(AnyChart_FormClosed);
 
             Hide();

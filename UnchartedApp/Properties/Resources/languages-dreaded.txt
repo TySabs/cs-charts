@@ -1,0 +1,10 @@
+89.9*Visual Basic 6
+84.1*Cobol
+82.7*CoffeeScript
+80.9*VB.NET
+80.0*VBA
+77.4*Matlab
+71.4*Assembly
+71.3*Perl
+70.3*Objective-C
+68.2*Lua

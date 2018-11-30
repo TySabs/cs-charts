@@ -1,0 +1,10 @@
+25.1*Python
+19.0*JavaScript
+16.2*Go
+12.4*Kotlin
+11.9*TypeScript
+10.5*Java
+10.2*C++
+8.3*Rust
+8.0*C#
+7.7*Swift
