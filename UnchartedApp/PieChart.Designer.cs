@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             this.panel1 = new System.Windows.Forms.Panel();
             this.MainLabel = new System.Windows.Forms.Label();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -63,12 +63,12 @@
             // 
             // chart1
             // 
-            chartArea8.AxisY.Title = "Popularity";
-            chartArea8.Name = "MainArea";
-            this.chart1.ChartAreas.Add(chartArea8);
-            legend8.Name = "MainLegend";
-            legend8.Title = "Framework";
-            this.chart1.Legends.Add(legend8);
+            chartArea10.AxisY.Title = "Popularity";
+            chartArea10.Name = "MainArea";
+            this.chart1.ChartAreas.Add(chartArea10);
+            legend10.Name = "MainLegend";
+            legend10.Title = "Framework";
+            this.chart1.Legends.Add(legend10);
             this.chart1.Location = new System.Drawing.Point(44, 141);
             this.chart1.Name = "chart1";
             this.chart1.Size = new System.Drawing.Size(1551, 949);
@@ -91,9 +91,10 @@
             this.SourceLabel.AutoSize = true;
             this.SourceLabel.Location = new System.Drawing.Point(39, 1102);
             this.SourceLabel.Name = "SourceLabel";
-            this.SourceLabel.Size = new System.Drawing.Size(716, 29);
+            this.SourceLabel.Size = new System.Drawing.Size(1151, 29);
             this.SourceLabel.TabIndex = 5;
-            this.SourceLabel.Text = "Source: StackOverflow Developer Survey 2018 -- All Respondents";
+            this.SourceLabel.Text = "Source: StackOverflow Developer Survey 2018 -- All Respondents, 51,620 responses;" +
+    " Select All That Apply";
             // 
             // PieChart
             // 

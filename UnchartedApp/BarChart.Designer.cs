@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             this.MainChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.MainLabel = new System.Windows.Forms.Label();
             this.SourceLabel = new System.Windows.Forms.Label();
@@ -39,16 +39,16 @@
             // 
             // MainChart
             // 
-            chartArea1.AxisX.Interval = 1D;
-            chartArea1.AxisX.MajorGrid.Enabled = false;
-            chartArea1.AxisX.Title = "Languages";
-            chartArea1.AxisY.MajorGrid.Enabled = false;
-            chartArea1.AxisY.Maximum = 90D;
-            chartArea1.AxisY.Title = "Popularity Percentage";
-            chartArea1.Name = "MainArea";
-            this.MainChart.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.MainChart.Legends.Add(legend1);
+            chartArea2.AxisX.Interval = 1D;
+            chartArea2.AxisX.MajorGrid.Enabled = false;
+            chartArea2.AxisX.Title = "Languages";
+            chartArea2.AxisY.MajorGrid.Enabled = false;
+            chartArea2.AxisY.Maximum = 90D;
+            chartArea2.AxisY.Title = "Popularity Percentage";
+            chartArea2.Name = "MainArea";
+            this.MainChart.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.MainChart.Legends.Add(legend2);
             this.MainChart.Location = new System.Drawing.Point(708, 156);
             this.MainChart.Name = "MainChart";
             this.MainChart.Size = new System.Drawing.Size(1298, 930);
@@ -70,9 +70,10 @@
             this.SourceLabel.AutoSize = true;
             this.SourceLabel.Location = new System.Drawing.Point(703, 1111);
             this.SourceLabel.Name = "SourceLabel";
-            this.SourceLabel.Size = new System.Drawing.Size(716, 29);
+            this.SourceLabel.Size = new System.Drawing.Size(1151, 29);
             this.SourceLabel.TabIndex = 2;
-            this.SourceLabel.Text = "Source: StackOverflow Developer Survey 2018 -- All Respondents";
+            this.SourceLabel.Text = "Source: StackOverflow Developer Survey 2018 -- All Respondents, 78,334 responses;" +
+    " Select All That Apply";
             // 
             // BackButton
             // 
