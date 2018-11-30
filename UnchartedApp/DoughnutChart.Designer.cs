@@ -35,12 +35,12 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             this.MainPanel = new System.Windows.Forms.Panel();
+            this.SourceLabel = new System.Windows.Forms.Label();
             this.BackButton = new System.Windows.Forms.Button();
             this.MainLabel = new System.Windows.Forms.Label();
             this.WantedChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.DreadedChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.LovedChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.SourceLabel = new System.Windows.Forms.Label();
             this.MainPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.WantedChart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DreadedChart)).BeginInit();
@@ -60,6 +60,16 @@
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Size = new System.Drawing.Size(2523, 1237);
             this.MainPanel.TabIndex = 0;
+            // 
+            // SourceLabel
+            // 
+            this.SourceLabel.AutoSize = true;
+            this.SourceLabel.Location = new System.Drawing.Point(25, 967);
+            this.SourceLabel.Name = "SourceLabel";
+            this.SourceLabel.Size = new System.Drawing.Size(1425, 29);
+            this.SourceLabel.TabIndex = 5;
+            this.SourceLabel.Text = "Source: StackOverflow Developer Survey 2018 -- Percentage of developers who expre" +
+    "ssed the following emotions about a language";
             // 
             // BackButton
             // 
@@ -119,20 +129,9 @@
             this.LovedChart.Legends.Add(legend3);
             this.LovedChart.Location = new System.Drawing.Point(30, 175);
             this.LovedChart.Name = "LovedChart";
-            this.LovedChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SemiTransparent;
             this.LovedChart.Size = new System.Drawing.Size(804, 776);
             this.LovedChart.TabIndex = 0;
             this.LovedChart.Text = "chart1";
-            // 
-            // SourceLabel
-            // 
-            this.SourceLabel.AutoSize = true;
-            this.SourceLabel.Location = new System.Drawing.Point(25, 967);
-            this.SourceLabel.Name = "SourceLabel";
-            this.SourceLabel.Size = new System.Drawing.Size(1425, 29);
-            this.SourceLabel.TabIndex = 5;
-            this.SourceLabel.Text = "Source: StackOverflow Developer Survey 2018 -- Percentage of developers who expre" +
-    "ssed the following emotions about a language";
             // 
             // DoughnutChart
             // 
